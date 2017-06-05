@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="clase7@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.2">
+    <root id="1"/>
+    <schema id="2" parent="1" name="clase7">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="com"/>
+    <schema id="4" parent="1" name="comentarios"/>
+    <schema id="5" parent="1" name="information_schema"/>
+    <schema id="6" parent="1" name="jorge"/>
+    <schema id="7" parent="1" name="local-profeatiempo"/>
+    <schema id="8" parent="1" name="local-profeatiempo_acceptance"/>
+    <schema id="9" parent="1" name="m1"/>
+    <schema id="10" parent="1" name="mascotitas_loc"/>
+    <schema id="11" parent="1" name="mcomposer"/>
+    <schema id="12" parent="1" name="mysql"/>
+    <schema id="13" parent="1" name="nr"/>
+    <schema id="14" parent="1" name="performance_schema"/>
+    <schema id="15" parent="1" name="phpmyadmin"/>
+    <schema id="16" parent="1" name="profeatiempo_acceptance"/>
+    <schema id="17" parent="1" name="profeatiempo_local"/>
+    <schema id="18" parent="1" name="profes"/>
+    <schema id="19" parent="1" name="reci_dev"/>
+    <schema id="20" parent="1" name="restaurante"/>
+    <schema id="21" parent="1" name="symfony"/>
+    <schema id="22" parent="1" name="symfony_acceptance"/>
+    <schema id="23" parent="1" name="symfony_blogpost"/>
+    <schema id="24" parent="1" name="test"/>
+    <schema id="25" parent="1" name="twigcrud"/>
+    <schema id="26" parent="1" name="wordpress"/>
+    <table id="27" parent="2" name="cliente"/>
+    <column id="28" parent="27" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="29" parent="27" name="nombre">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="27" name="apellido">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="31" parent="27" name="usuario">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="32" parent="27" name="clave">
+      <Position>5</Position>
+      <DataType>varchar(256)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="33" parent="27" name="usuario">
+      <ColNames>usuario</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="34" parent="27" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="35" parent="27" name="usuario">
+      <ColNames>usuario</ColNames>
+      <UnderlyingIndexName>usuario</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
